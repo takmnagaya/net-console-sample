@@ -22,6 +22,14 @@ namespace net_console_sample
             // nullでもエラーにならない
             string str = null;
             string unspace = str?.Trim();
+
+            // null許容型
+            int i2 = 109;
+            int? num = i2;
+            int i3 = (int)num;
+            Console.WriteLine(i3);
+            int? i4 = 1;
+            Console.WriteLine(i4.HasValue);
         }
     }
 }
